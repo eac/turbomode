@@ -6,8 +6,10 @@ Turbo mode makes reloading code fast and easy.
 
   1. To reload, Ctrl+\ (or kill -SIGQUIT child_pid)
   2. Note that 'exit' doesn't quite work at the moment. Use Ctrl+C to exit.
+  3. To see the list of files that aren't reloadable: puts $SHARED_FEATURES.sort
 
 ### Setup
+
 
 #### Rails
 
@@ -35,5 +37,5 @@ Turbo mode makes reloading code fast and easy.
 
 ### Things it breaks
 
-  1 SIGQUIT is captured. This breaks the exit method, but provides the reload shortcut Ctrl+\
-  2 Let's find out.
+  1. SIGQUIT is captured. This breaks the exit method, but provides the reload shortcut Ctrl+\
+  2. Let's find out.
