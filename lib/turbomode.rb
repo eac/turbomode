@@ -7,7 +7,6 @@ module TurboMode
       Rails::Initializer.class_eval do
         def initialize_routing_with_turbo_mode
           initialize_routing_without_turbo_mode
-          prepare_dispatcher
           TurboMode.enable! do
             ActiveRecord::Base.clear_all_connections!
           end
